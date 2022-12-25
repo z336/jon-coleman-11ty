@@ -1,0 +1,10 @@
+<header>
+  <a href="/">{{ metadata.title }}</a>
+  <nav aria-label="primary">
+    <ul>
+      {% for entry in navigation %}
+      <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

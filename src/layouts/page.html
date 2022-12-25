@@ -1,0 +1,26 @@
+---
+layout: base.html
+---
+
+{% assign tags = tags | filterTagList %}
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    {% if date and tags %}
+    <time datetime="{{ date | htmlDateString }}"
+      >{{ date | readableDate }}</time
+    >
+    <ul>
+      {% for tag in tags %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+  <article>
+    {% if description %}
+    <p>{{ description }}</p>
+    {% endif %} {{ content }}
+  </article>
+</article>

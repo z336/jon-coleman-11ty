@@ -1,0 +1,27 @@
+<footer>
+  <p>Built with</p>
+  <ul>
+    {% for entry in metadata.credit.build %}
+    <li>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p>Hosted and deployed</p>
+  <ul>
+    {% for entry in metadata.credit.host %}
+    <li>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p>Inspired by</p>
+  <ul>
+    {% for entry in metadata.credit.inspiration %}
+    <li>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p>{{ metadata.author }} {{ '' | getFullYear }}</p>
+</footer>

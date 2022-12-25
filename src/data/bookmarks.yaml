@@ -1,0 +1,22 @@
+- bookmark:
+  title: DuckDuckGo
+  url: https://duckduckgo.com/
+  tags:
+    - apple
+    - lime
+- bookmark:
+  title: The Verge
+  url: https://theverge.com/
+  tags:
+    - banana
+- bookmark:
+  title: Eleventy
+  url: https://11ty.dev/
+  tags:
+    - apple
+    - chocolate
+- bookmark:
+  title: MaximumRockNRoll
+  url: https://maximumrocknroll.com/
+  tags:
+    - apple
